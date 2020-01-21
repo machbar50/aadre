@@ -63,7 +63,3 @@ function mostrarJsonEnLista( datos, campoMostrar, idContenedor, borrarContenedor
 	document.getElementById(idContenedor).innerHTML += ( html + "</ul>");
 	
 }
-
-function nuevaParaBorrar(){
-	
-}
