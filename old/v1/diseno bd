@@ -1,0 +1,48 @@
+tabla TEMAS_PUBLICACION
+
+id  desc
+--
+1   actualidad
+2   educativo
+
+tabla SUBTEMA_PUBLICACION
+
+id_sub   id_tema   desc
+------
+1           1       farandula
+2           1       politica
+3           2       infantil
+4           2       ciencia
+5           1       educacion
+
+
+tabla PUBLICACIONES
+
+numero_pub   titulo        
+----------
+1              Gente         
+2              Billiken       
+
+tabla TEMATICAS_PUBLICACION
+
+numero_pub   id_sub
+----------   ------
+
+1              1
+2              3
+1              2
+  
+
+tabla EDICIONES
+numero_pub  nro_edicion  sub_esp  imagen_portada 
+----------  -----------
+1               1         rodrigo    img1.jpg    
+2               1         9 de jul   img3.jpg      
+      
+
+tabla SALIDAS_EDICIONES
+numero_pub  nro_edicion  fecha      precio    tipo
+----------  -----------  --------
+1               1        01/01/19    100      SAL
+2               1        05/03/18    200      SAL
+1               1        05/05/19    140      REL
